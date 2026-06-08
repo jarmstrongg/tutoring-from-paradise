@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mrs. Annika Armstrong</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="logo">Mrs. Annika Armstrong</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+        ☰
+      </button>
+
+      <nav class="site-nav" id="primaryNav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="qualifications.html" aria-current="page">Qualifications</a></li>
+          <li><a href="testimonials.html" aria-current="page">Testimonials</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Personalized Tutoring To Help Students Achieve Their Goals</h1>
+          <p>Support for High School and AP English in a friendly, encouraging environment.</p>
+          <a class="btn" href="#contact">Book a Consultation</a>
+        </div>
+        <div class="hero-image">
+          <img src="photos/annika_main_pic.jpeg" alt="Tutoring business photo" class="hero-photo">
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section1" id="about">
+      <div class="container split">
+        <div class="about-container">
+          <h2>About Me</h2>
+          <p class="about-text">Welcome! I'm Annika Armstrong. Over my 8+ years of teaching and tutoring, I have gained a 
+            lifelong passion for helping students take ownership of their learning. For three years, 
+            I taught high school English full-time, designing curriculum for grades 9-12 and AP 
+            English Language & Composition. During that time, I guided my AP students in improving 
+            exam pass rates from 28% to 88% over two years. After my students developed 
+            literacy skills that fostered their sense of self-efficacy beyond the classroom, I knew I had 
+            found my purpose. I am currently completing my Master's in Literature at the University 
+            of Colorado Boulder, where I continue to improve my own teaching practice while also supporting graduate instructors.</p>
+        </div>
+        <div class="feature-container">
+          <h2>Why Choose Me?</h2>
+          <ul class="feature-list">
+            <li>I help students build confidence and independence, not just improve their grades.</li>
+            <li>I offer flexible scheduling and send weekly updates to parents.</li>
+            <li>My breadth of experience allows me to adapt sessions to fit each student's needs.</li>
+            <li>I balance support with high expectations so students feel encouraged and capable.</li>
+            <li>I help students with skills that will last beyond their current class, such as 
+              critical thinking, study techniques, and time management. </li>
+          </ul>
+          <a class="quali-btn" href="qualifications.html">See my qualifications</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section alt" id="services">
+      <div class="container">
+        <h2 class="services-text">Classes I can help with</h2>
+
+        <div class="card-grid">
+          <div class="card">
+            <h3>AP English Language & Composition</h3>
+          </div>
+          <div class="card">
+            <h3>AP English Literature & Composition</h3>
+          </div>
+          <div class="card">
+            <h3>Standard & Honors High School English Classes</h3>
+          </div>
+          <div class="card">
+            <h3>College Literature & Writing Courses</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+<!-- ----------------------------------------------------------------------------------------------- -->
+    <section class="content-section2" id="testimonials">
+
+      <div class="container">
+
+        <div class="testimonials-callout">
+          <h3>Want to see what parents and students have said about their tutoring experience?</h3>
+          <a class="btn" href="testimonials.html">See Testimonials</a>
+        </div>
+
+      </div>
+
+    </section>
+<!-- ----------------------------------------------------------------------------------------------- -->
+    <section class="content-section alt" id="contact">
+      <div class="container split1">
+        <div class="contact-info">
+          <h2>Contact</h2>
+          <div class="contact-details">
+
+            <p>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:tutoringfromparadise@gmail.com">
+                tutoringfromparadise@gmail.com
+              </a>
+            </p>
+
+            <p>
+              <i class="fas fa-phone"></i>
+              (808) 285-6141
+            </p>
+
+            <p>
+              <i class="fab fa-instagram"></i>
+              <a href="https://instagram.com/teachingfromparadise_" target="_blank">
+                @teachingfromparadise_
+              </a>
+            </p>
+
+          </div>
+        
+
+        
+          <div class="contact-photo">
+            <img src="photos/annika_pic.JPG" alt="contact photo">
+          </div>
+        </div>
+
+        <form
+          class="contact-form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          action="/thank-you.html"
+        >
+
+          <input type="hidden" name="form-name" value="contact">
+
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+
+      </div>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

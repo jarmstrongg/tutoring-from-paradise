@@ -1,0 +1,630 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.7;
+  color: #222;
+  background: #f8f8f8;
+}
+
+h1, h2, h3, .logo, .btn {
+  font-family: 'Nunito', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  background: rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.site-nav {
+  display: block;
+}
+
+.site-header {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #333;
+  font-weight: 600;
+}
+
+.hero {
+  position: relative;
+  background:
+    linear-gradient(rgba(28, 81, 57, 0.72), rgba(34, 98, 69, 0.72)),
+    url('photos/your-photo.jpg') center/cover no-repeat;
+  padding: 4rem 0;
+}
+
+.hero-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  width: min(1200px, 95%);
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.hero-text,
+.hero-image {
+  flex: 1;
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-top: 0;
+}
+
+.hero-photo {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.btn {
+  display: inline-block;
+  background:#ffffff;
+  color: rgb(0, 0, 0);
+  padding: 0.85rem 1.3rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.quali-btn {
+  display: inline-block;
+  background:#41715d;
+  color: rgb(255, 255, 255);
+  padding: 0.85rem 1.3rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: #e4d777;
+  color: white;
+}
+
+.testimonials-callout {
+  max-width: 700px;
+  margin: 2rem auto 0;
+  padding: 2rem;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.testimonials-callout h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.testimonials-callout p {
+  margin-bottom: 1.25rem;
+}
+
+.testimonials-callout .btn {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #41715d;
+}
+
+.image-placeholder {
+  min-height: 280px;
+  background: #f6f7f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  color: #3d4f68;
+  font-weight: 600;
+}
+
+.content-section1 {
+  position: relative;
+  padding: 4rem 0;
+  background:
+    linear-gradient(rgba(255, 251, 244, 0.77), rgba(255, 252, 245, 0.668)),
+    url('photos/classroom_2.jpeg') center/cover no-repeat;
+}
+
+.about-container,
+.feature-container {
+  background: rgba(255, 255, 255, 0.957);
+  backdrop-filter: blur(10x);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.946);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.about-text {
+  color: #000000;
+}
+
+.content-section.alt {
+  background: linear-gradient(rgba(28, 81, 57, 0.72), rgba(34, 98, 69, 0.72));
+}
+
+.content-section.alt h2, p, label {
+  color: #ffffff;
+}
+
+.split {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.split > div,
+.contact-form {
+  flex: 1;
+}
+
+/* .split1 {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  width: min(1200px, 95%);
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.28);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 2rem;
+} */
+
+.split1 > div,
+.contact-form {
+  flex: 1;
+}
+
+.services-text {
+  text-align: center;
+  font-size: 40px;
+}
+
+.card-grid {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: nowrap;
+  margin-top: 1.25rem;
+}
+
+.card {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.feature-list {
+  padding-left: 1rem;
+}
+
+.feature-container {
+  padding-left: 4rem
+}
+
+.content-section2 {
+  position: relative;
+  padding: 4rem 0;
+  background:
+    linear-gradient(rgba(255, 251, 244, 0.77), rgba(255, 252, 245, 0.668)),
+    url('photos/books.jpeg') center/cover fixed no-repeat;
+}
+
+.container-section1,
+.content-section.alt,
+.content-section2 {
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+  padding: 4rem 0;
+  margin: 0;
+}
+
+/* Testimonials ------------------------------------------------------------------------------- */
+
+/* .testimonials-hero {
+  background:
+    linear-gradient(
+      rgba(255, 248, 240, 0.75),
+      rgba(255, 248, 240, 0.55)
+    ),
+    url('photos/books.jpeg') center/cover no-repeat;
+} */
+
+/* Testimonials page title panel */
+
+.testimonials-main {
+  background-color: #36755bd6;
+  min-height: calc(100vh - 80px);
+}
+
+.testimonials-section {
+  padding: 5rem 0;
+  background:
+    linear-gradient(
+      rgba(255, 251, 244, 0.80),
+      rgba(255, 251, 244, 0.80)
+    ),
+    url('photos/classroom_2.jpeg') center/cover no-repeat;
+}
+
+.testimonial-feature {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 3rem;
+  text-align: center;
+}
+
+.testimonial-quote {
+  color: #000000;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  line-height: 1.9;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-name {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* .testimonials-title-panel {
+  background: rgba(255, 255, 255, 0.38);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+} */
+
+/* Testimonials grid */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 0 4rem;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.30);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+}
+
+.testimonial-quote {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-top: 0;
+}
+
+.testimonial-name {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* contact ----------------------------------------------------------------- */
+
+.contact-form {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.85rem;
+  border: 1px solid #78cca8;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.contact-details p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0.8rem 0;
+  font-size: 1.05rem;
+}
+
+.contact-details i {
+  width: 20px;
+  text-align: center;
+  color: #e4d777;
+  font-size: 1.1rem;
+}
+
+.card p {
+  margin-top: 0;
+}
+
+/* Quali ---------------------------------------------------------- */
+
+.quali-main {
+  color: #000000;
+}
+
+.page-hero {
+  padding: 4rem 0 2rem;
+  background-color: #508871d3
+}
+
+.page-section {
+  padding: 3rem 0;
+}
+
+.page-section.alt {
+  color: #000000;
+  background-color: #508871cd;
+}
+
+.quali-title {
+  font-size: 40px;
+}
+
+.qualifications-section {
+  padding: 3rem 0;
+  background:
+    linear-gradient(
+      rgba(255, 251, 244, 0.80),
+      rgba(255, 251, 244, 0.80)
+    ),
+    url('photos/annika_classroom.JPG') center/cover fixed no-repeat;
+}
+
+.frosted-panel,
+.frosted-card {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.43);
+}
+
+.frosted-panel {
+  padding: 2rem;
+  text-align: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.qualifications-grid {
+  display: block;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.qualifications-single {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.qual-card {
+  padding: 1.5rem;
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+.qual-card h2 {
+  margin-top: 0;
+}
+
+.qual-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .qualifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .frosted-panel,
+  .qual-card {
+    border-radius: 16px;
+  }
+}
+
+/* Home Mobile ------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .site-nav {
+    display: none;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .site-nav.open {
+    display: block;
+  }
+
+  .nav-container {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+  }
+
+  .hero-content,
+  .split {
+    flex-direction: column;
+  }
+
+  .hero-text,
+  .hero-image,
+  .split > div,
+  .contact-form {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero-image {
+    align-self: stretch;
+  }
+
+  .image-placeholder {
+    aspect-ratio: 4 / 3;
+    min-height: 220px;
+  }
+
+  .about-container,
+  .feature-container {
+    padding: 1.25rem;
+    border-radius: 16px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+
+  .card-grid {
+    flex-direction: column;
+  }
+
+  #contact .split1 {
+    flex-direction: column;
+  }
+
+  #contact .contact-info {
+    order: 1;
+  }
+
+  #contact .contact-form {
+    order: 2;
+  }
+
+  #contact .contact-photo {
+    order: 3;
+    margin-top: 1.5rem;
+  }
+}
+
+/* Contact Section */
+
+#contact .split1 {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+#contact .contact-info,
+#contact .contact-form {
+  flex: 1;
+}
+
+#contact .contact-photo {
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 250px;
+}
+
+#contact .contact-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
