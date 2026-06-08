@@ -628,3 +628,32 @@ a {
   display: block;
   border-radius: 16px;
 }
+
+.thank-you-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      rgba(28, 81, 57, 0.72),
+      rgba(34, 98, 69, 0.72)
+    ),
+    url('photos/thank-you-pic.JPG') center/cover no-repeat;
+}
+
+.thank-you-page .frosted-panel {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.thank-you-page h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  margin-top: 0;
+}
+
+.thank-you-page p {
+  color: #000;
+  font-size: 1.1rem;
+}
