@@ -637,8 +637,8 @@ a {
 
   background:
     linear-gradient(
-      rgba(28, 81, 57, 0.72),
-      rgba(34, 98, 69, 0.72)
+      rgba(255, 251, 235, 0.72),
+      rgba(145, 116, 62, 0.72)
     ),
     url('photos/thank-you-pic.JPG') center/cover no-repeat;
 }
