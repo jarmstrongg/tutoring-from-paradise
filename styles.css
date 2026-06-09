@@ -359,9 +359,9 @@ a {
 /* Testimonials grid */
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
-  padding: 2rem 0 4rem;
+  margin-top: 3rem;
 }
 
 .testimonial-card {
@@ -371,18 +371,22 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  padding: 1.5rem;
+  padding: 1.75rem;
+  height: 100%;
+  text-align: center;
 }
 
 .testimonial-quote {
   font-size: 1.05rem;
-  line-height: 1.7;
+  line-height: 1.8;
   margin-top: 0;
+  font-style: italic;
 }
 
 .testimonial-name {
+  margin-top: 1rem;
   margin-bottom: 0;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 @media (max-width: 900px) {
