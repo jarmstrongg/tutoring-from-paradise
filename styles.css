@@ -359,7 +359,8 @@ a {
 /* Testimonials grid */
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(2fr, auto));
   gap: 1.5rem;
   margin-top: 3rem;
   align-items: start;
